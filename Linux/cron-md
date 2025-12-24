@@ -1,0 +1,18 @@
+# Cron Jobs
+
+## Cos'è
+Cron is a scheduler that allows tasks to run automatically at specified intervals.
+
+## Perché è importante
+Scheduling repetitive tasks improves efficiency and is essential for system maintenance and automation.
+
+## Comandi principali
+```bash
+crontab -e            # Edit user cron jobs
+crontab -l            # List cron jobs
+* * * * * /path/to/script.sh  # Cron timing format
+
+## Errori comuni
+- Using incorrect timing format
+- Forgetting to give execute permissions to scripts
+- Not specifying full paths in cron jobs
