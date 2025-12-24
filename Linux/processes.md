@@ -15,3 +15,4 @@ kill <PID>   # Terminate a process by PID
 ## Errori comuni
 - Killing the wrong process without checking PID
 - Ignoring background processes that consume resources
+- Not checking process ownership
