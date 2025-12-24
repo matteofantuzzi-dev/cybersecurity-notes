@@ -11,3 +11,8 @@ Understanding permissions is crucial for security, avoiding unauthorized access,
 ls -l           # Shows file permissions
 chmod 755 file  # Change permissions
 chown user:group file  # Change ownership
+
+## Errori comuni
+- Setting too permissive permissions (e.g., 777)
+- Not checking ownership before editing system files
+- Ignoring permission inheritance in directories
