@@ -1,0 +1,20 @@
+# Linux Networking
+
+## Cos'è
+Linux provides tools to monitor and manage network interfaces, connections, and routes.
+
+## Perché è importante
+Networking knowledge is essential for troubleshooting, scanning, and penetration testing.
+
+## Comandi principali
+```bash
+ifconfig           # Show network interfaces (deprecated, but still used)
+ip addr            # Show IP addresses
+ping <host>        # Test connectivity
+traceroute <host>  # Trace route to a host
+netstat -tuln      # Show listening ports
+
+## Errori comuni
+- Forgetting to check network interfaces before scanning
+- Using ping/traceroute without proper permissions
+- Overlooking firewall or routing issues
