@@ -11,3 +11,8 @@ Many security tools run on Linux, and understanding it is essential for penetrat
 pwd       # Shows current directory
 ls        # Lists files and folders
 cd <dir>  # Change directory
+
+## Errori comuni
+- Forgetting to check the current directory before running commands.
+- Confusing relative vs absolute paths.
+- Running commands without understanding their effects.
