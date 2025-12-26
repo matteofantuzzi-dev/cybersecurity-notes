@@ -4,17 +4,60 @@
 Linux provides tools to monitor and manage network interfaces, connections, and routes.
 
 ## Perché è importante
-Networking knowledge is essential for troubleshooting, scanning, and penetration testing.
+Networking knowledge is essential for troubleshooting, scanning, penetration testing, and incident response in cybersecurity.
 
-## Comandi principali
-```bash
-ifconfig           # Show network interfaces (deprecated, but still used)
-ip addr            # Show IP addresses
-ping <host>        # Test connectivity
-traceroute <host>  # Trace route to a host
-netstat -tuln      # Show listening ports
+---
 
-## Errori comuni
+## Basic Networking Commands
+
+### ifconfig (deprecated)
+- Shows network interfaces and their configuration
+- Still found on older systems
+
+### ip addr
+- Displays IP addresses and interface details
+- Modern replacement for ifconfig
+
+### ping
+- Tests connectivity between hosts using ICMP
+- Useful to check if a host is reachable
+
+### traceroute
+- Shows the path packets take to reach a destination
+- Helps identify network routing issues
+
+### netstat (legacy)
+- Displays network connections and listening ports
+- Largely replaced by `ss` on modern systems
+
+---
+
+## ss (Socket Statistics)
+
+`ss` is a modern replacement for `netstat` used to inspect network sockets.
+It communicates directly with the Linux kernel, making it faster and more accurate.
+
+### Common options
+- `ss -l` : show listening sockets
+- `ss -t` : show TCP connections
+- `ss -u` : show UDP connections
+- `ss -n` : show numeric IPs and ports
+- `ss -p` : show the process using the socket
+- `ss -tuln` : list all listening TCP and UDP ports
+- `ss -s` : display socket statistics
+
+### Security relevance
+- Identify exposed services
+- Detect unexpected open ports
+- Useful during incident response and system auditing
+
+### Common Errors
+- Forgetting `-n`, causing slow DNS resolution
+- Not using `-p`, missing the process behind a connection
+
+---
+
+## Common Errors (General Networking)
 - Forgetting to check network interfaces before scanning
-- Using ping/traceroute without proper permissions
+- Using ping or traceroute without proper permissions
 - Overlooking firewall or routing issues
