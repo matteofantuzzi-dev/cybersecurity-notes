@@ -1,0 +1,29 @@
+# 🪟 Windows Fundamentals 3 - Notes & Lab
+
+In questa sezione ho raccolto i concetti avanzati di amministrazione e sicurezza del sistema operativo Windows, completando il modulo di TryHackMe.
+
+## 🔑 Key Concepts Learned
+
+### 🛡️ BitLocker & TPM
+- **TPM (Trusted Platform Module):** Chip hardware per la sicurezza dei dati.
+- **Sistemi senza TPM:** Se il chip TPM (v1.2 o superiore) è assente, è necessario utilizzare una **Startup Key** salvata su un'unità rimovibile (USB) per sbloccare l'unità crittografata all'avvio.
+- **Recovery Key:** Una password di 48 cifre necessaria se si perde la Startup Key o il chip TPM viene resettato.
+
+### 🧱 Windows Firewall Profiles
+Il firewall di Windows applica tre diversi profili in base alla rete:
+1. **Domain Profile:** Per macchine connesse a un dominio Active Directory.
+2. **Private Profile:** Per reti domestiche o aziendali fidate (permette Network Discovery).
+3. **Public Network Profile:** Il profilo più restrittivo, utilizzato in luoghi come aeroporti o bar. Blocca quasi tutte le connessioni in entrata.
+
+### ⚙️ System Configuration & Management
+- **MSConfig:** Utilizzato per gestire l'avvio del sistema, i servizi e la modalità provvisoria.
+- **Event Viewer:** Fondamentale per l'analisi forense e il troubleshooting (log di Sistema, Sicurezza e Applicazioni).
+- **Resource Monitor:** Per l'analisi in tempo reale del consumo di CPU, Memoria, Disco e Rete.
+
+## 🛠️ Hands-on Skills
+- Configurazione di regole avanzate nel Windows Firewall (Inbound/Outbound rules).
+- Gestione dei servizi e dei processi tramite Task Manager e Services.msc.
+- Analisi dell'integrità del sistema tramite riga di comando.
+
+---
+*Note caricate durante il percorso di studio su TryHackMe.*
