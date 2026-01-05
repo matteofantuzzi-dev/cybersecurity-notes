@@ -12,7 +12,7 @@ Ho esplorato la struttura logica che permette di scalare la rete da pochi utenti
 * **OU (Organizational Unit):** Contenitori logici usati per organizzare gli oggetti e delegare i permessi.
 
 
-
+ 
 ### 2. Gestione degli Utenti e Privilegi
 Durante l'analisi dell'utente `Sophie`, ho compreso l'importanza della gestione degli account privilegiati:
 * **Domain Admins:** Account con controllo totale sul Domain Controller. La loro protezione è la priorità numero uno per la cybersecurity.
